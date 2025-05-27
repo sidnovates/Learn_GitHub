@@ -1,0 +1,58 @@
+LEARN GITHUB COMMANDS
+
+-> Make changes in repo globally
+    git config --global user.name "User name"
+    git config --global user.email "Email"
+
+-> Different functions of Git:
+    git clone <some-link>: Used for cloning that repo into located folder
+    git status : Check repo status
+
+    git add <file-name>: To add a single file to ready stage
+    git add . : To add all files to ready stage
+
+    git commit -m "Some message" : Locally commit 
+
+    git push origin main : Make changes to the main remote GitHub code
+
+-> If a project is made locally and then later you want to add in GitHub:
+    git init
+    Create a new repo in GitHub
+    git remote add origin <link-of-new-repo>
+    git remote -v: Verify remote
+    git push origin main
+
+-> Branch Commands:
+    git branch :Gives all branches
+    git branch -M main: Change name of the branch to main
+    git checkout -b <new bname>: Create and navigate to the new branch
+    git checkout <branch-name> : navigate to the branch
+    git branch -d <bname> : delete branch
+
+-> Merging Branches:
+    git diff <bname> : Compare btw current and bname
+
+    git merge <bname> : Merge to bname [When working along]
+    Pull Request through GitHub [When working together]
+
+-> Make remote repo changes to local repo:
+    git pull origin main
+
+    git log : Show all commits
+
+-> Undoing changes:
+
+    1) Staged Changes- [If added and want to reset]
+    git reset <file-name>
+    git reset : Reset all files
+
+    2) Commited Changes- [Want to reset commited changes]
+    git reset HEAD~1 [reset to that part before recently commited]
+
+    3) Go to some previous commit
+    git reset <commit-hash> : Each commit has some associated hash ;use that
+    git reset --hard <commit-hash> : Make the respective changes to the opened code
+
+-> Fork:
+    TO make a rough copy of any other repo in our account
+
