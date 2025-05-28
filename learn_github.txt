@@ -53,6 +53,11 @@ LEARN GITHUB COMMANDS
     git reset <commit-hash> : Each commit has some associated hash ;use that
     git reset --hard <commit-hash> : Make the respective changes to the opened code
 
+->To see what all files are tracked by git:
+    git ls-files
+
+-> Remove a file which is tracked by git:
+    git rm --cached <file-name>
 -> Fork:
     TO make a rough copy of any other repo in our account
 
